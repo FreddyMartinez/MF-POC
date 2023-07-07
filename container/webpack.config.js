@@ -43,7 +43,9 @@ module.exports = (_, argv) => ({
     new ModuleFederationPlugin({
       name: "poc_module_federation",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        mf1: 'mf1@http://localhost:8081/remoteEntry.js'
+      },
       exposes: {},
       shared: {
         ...deps,

@@ -1,18 +1,13 @@
-import React, { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-
 import "./index.css";
+import { Suspense, lazy } from "react";
 
-const App = () => (
-  <div className="container">
+const MF = lazy(() => import("mf1/App"));
+
+export const App = () => (
+  <div className="main-container">
     <h2>PoC Module Federation</h2>
+    <Suspense fallback={null}>
+      <MF />
+    </Suspense>
   </div>
-);
-
-const container = document.getElementById("app");
-const root = createRoot(container!);
-root.render(
-  <StrictMode>
-    <App />
-  </StrictMode>
 );

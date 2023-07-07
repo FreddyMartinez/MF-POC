@@ -3,8 +3,11 @@ body {
 }
 
 .container {
-  font-size: 3rem;
+  font-size: 1rem;
   margin: auto;
   max-width: 800px;
   margin-top: 20px;
+  background-color: #abc;
+  border: black 1px solid;
+  padding: 0.5rem;
 }
