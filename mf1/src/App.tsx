@@ -1,9 +1,9 @@
 import "./index.css";
 
-const App = () => (
-  <div className="container">
-    <div>Name: mf1</div>
-  </div>
-);
+const App = ({value}: {value : string}) =>   (
+    <div className="container">
+      <div>Name: {value || 'hijo'}</div>
+    </div>
+  );
 
 export default App;
