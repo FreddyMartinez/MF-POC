@@ -3,7 +3,7 @@ import Image from 'next/image';
 import styles from '../styles/Home.module.css';
 import dynamic from 'next/dynamic';
 
-const ReactRemoteComponent = dynamic(() => import('mf1/Btn'), {
+const ReactRemoteComponent = dynamic(() => import('mf1/App'), {
   ssr: false,
 });
 
@@ -21,7 +21,7 @@ export default function Home() {
           This is a Next.js Host
         </h1>
 
-        <ReactRemoteComponent />
+        <ReactRemoteComponent value={'value from host'} />
 
       </main>
 
