@@ -1,5 +1,5 @@
 {
-  "name": "next-host",
+  "name": "nextjs-react_host-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.4.5",
-    "@types/react": "18.2.18",
-    "@types/react-dom": "18.2.7",
-    "eslint": "8.46.0",
-    "eslint-config-next": "13.4.12",
-    "next": "13.4.12",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.1.6"
+    "@module-federation/nextjs-mf": "^5.12.10",
+    "next": "^13.4.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.18",
+    "eslint": "8.30.0",
+    "eslint-config-next": "13.3.1",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
   }
 }
