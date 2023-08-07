@@ -10,7 +10,7 @@ const Page = () => {
       <h2>Host - App</h2>
       <div>Hello</div>
       <h2>Microfront - App</h2>
-      <RemoteApp value="Next 13 Host" />
+      <RemoteApp basename="remote" value="Next 13 Host" />
     </div>
   );
 };

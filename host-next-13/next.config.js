@@ -16,4 +16,13 @@ module.exports = {
 
     return config;
   },
+  async redirects() {
+    return [
+      {
+        source: '/remote/:slug',
+        destination: '/remote',
+        permanent: true,
+      }
+    ]
+  }
 };

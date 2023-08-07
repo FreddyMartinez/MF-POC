@@ -1,11 +1,19 @@
 import React from 'react';
 
 const style = {
-  background: '#ffc600',
-  color: '#000',
+  background: '#ed2311',
+  color: '#ff',
+  margin: '12px',
   padding: 12,
+  border: 0,
+  borderRadius: '8px'
 };
 
-const Button = () => <button style={style}>Next JS Button</button>;
+interface ButtonProps {
+  text: string
+  redirectsTo?: string
+}
+
+const Button = ({text}: ButtonProps) => <button style={style}>{text}</button>;
 
 export default Button;
