@@ -3,13 +3,13 @@ import { Suspense, lazy } from "react";
 
 const SecondForm = lazy(() => import("./modules/secondStep/secondStep"));
 
-export const routes = (prefix: string) => [
+export const routes = [
   {
-    path: prefix + "/",
+    path: "/",
     element: <FirstForm />,
   },
   {
-    path: prefix + "second",
+    path: "second",
     element: <Suspense><SecondForm /></Suspense>,
   },
 ];
