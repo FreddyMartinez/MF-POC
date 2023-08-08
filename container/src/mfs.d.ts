@@ -1,5 +1,5 @@
 declare module 'mf1/App' {
-    const App: ({ value }: { value: string }) => JSX.Element
+    const App: ({ routerUpdater }: { routerUpdater?: (routes: RoutProps[]) => void }) => JSX.Element
     export default App 
 };
 declare module 'mf1/Btn';
