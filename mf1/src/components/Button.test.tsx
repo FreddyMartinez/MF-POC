@@ -1,13 +1,14 @@
 import { render } from '@testing-library/react'
-import MyButton from './Button'
+import { MyButton } from './Button'
 
 describe('Button component', () => {
     it('should render a button', () => {
+        const text = 'MF Button'
         const { queryByText } = render(
-            <MyButton />
+            <MyButton>{text}</MyButton>
         )
 
-        const button = queryByText('MF Button')
+        const button = queryByText(text)
         expect(button).not.toBeNull()
     })
 })

@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MyButton } from "../../components/Button";
 
 export function FirstForm() {
   return (
@@ -6,9 +7,9 @@ export function FirstForm() {
       <legend>First step</legend>
       <label htmlFor="">This is an input</label>
       <input type="text" />
-      <button>
+      <MyButton>
         <Link to="/second">Next</Link>
-      </button>
+      </MyButton>
     </form>
   );
 }

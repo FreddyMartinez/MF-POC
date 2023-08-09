@@ -1,3 +1,4 @@
+import { MyButton } from "../../components/Button";
 import { Link } from "react-router-dom";
 
 export default function SecondForm() {
@@ -6,9 +7,13 @@ export default function SecondForm() {
       <legend>Second step</legend>
       <label htmlFor="">This is another input</label>
       <input type="text" />
-      <button>
+      <MyButton
+        onClick={() => {
+          console.log("navigate back");
+        }}
+      >
         <Link to="/">Prev</Link>
-      </button>
+      </MyButton>
     </form>
   );
 }
