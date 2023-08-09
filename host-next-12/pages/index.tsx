@@ -21,7 +21,7 @@ export default function Home() {
           This is a Next.js Host
         </h1>
 
-        <ReactRemoteComponent value={'value from host'} />
+        <ReactRemoteComponent value={'value from host'} basename='' />
 
       </main>
 

@@ -1,5 +1,5 @@
 declare module 'mf1/App' {
-    const App: ({ value }: { value: string }) => JSX.Element
+    const App: ({ basename, value }: { basename: string, value?: string }) => JSX.Element
     export default App 
 };
 declare module 'mf1/Btn';
