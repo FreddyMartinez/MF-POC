@@ -1,5 +1,5 @@
 import dynamic from "next/dynamic";
-import Button from "../components/Button";
+import Button from "../common/components/Button";
 
 const RemoteApp = dynamic(() => import('mf1/App'), {
   ssr: false,
