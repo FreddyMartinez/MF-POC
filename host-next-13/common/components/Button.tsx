@@ -11,9 +11,10 @@ const style = {
 
 interface ButtonProps {
   text: string
+  onClick: () => void
   redirectsTo?: string
 }
 
-const Button = ({text}: ButtonProps) => <button style={style}>{text}</button>;
+const Button = ({text, onClick}: ButtonProps) => <button style={style} onClick={onClick}>{text}</button>;
 
 export default Button;
