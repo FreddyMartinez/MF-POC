@@ -9,3 +9,7 @@ type MicroFrontProps = {
   value: string;
   useHostState: CounterStateHook;
 };
+
+type ExternalConfig = {
+  useHostState: CounterStateHook;
+}
