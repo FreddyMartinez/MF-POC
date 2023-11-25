@@ -16,7 +16,7 @@ const Page = () => {
       {counter}
       <Button text="Add" onClick={add}/>
       <h2>Microfront - App</h2>
-      <RemoteApp basename="" value="Next 13 Host" />
+      <RemoteApp basename="" value="React MF inside Next 13 Host" useHostState={useCounterState} />
     </div>
   );
 }

@@ -11,7 +11,7 @@ class Notifier<T> {
     this.#observers.delete(o);
   }
 
-  notify(data: T) {
+  protected notify(data: T) {
     this.#observers.forEach((o) => o(data));
   }
 }
